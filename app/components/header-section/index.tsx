@@ -4,9 +4,9 @@ import {useTextStyles} from '@rescui/typography';
 import {cardCn} from '@rescui/card';
 import cn from 'classnames';
 
-import {Container, Section} from "../../../components/layout";
+import {Container, Section} from "../layout";
 
-import {cardsData} from './data';
+import {cardsData} from './data.js';
 
 import './index.scss';
 

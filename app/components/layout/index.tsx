@@ -1,14 +1,14 @@
-import React from 'react';
+import React, {type ReactNode} from 'react';
 
 import './index.scss';
 
-export function Section({ children, className}) {
+export function Section({ children, className}: {children: ReactNode, className?: string}) {
     return <section className={'kto-layout-section' + ' ' + className}>
         {children}
     </section>
 }
 
-export function Container({ children }) {
+export function Container({ children }: {children: ReactNode, className?: string}) {
     return <div className="kto-layout-container">
         {children}
     </div>

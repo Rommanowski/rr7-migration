@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import { HeaderSection } from "~/components/header-section";
 
 export const meta: Route.MetaFunction = () => [
     { title: "Kotlin Programming Language" },
@@ -15,5 +16,5 @@ export const meta: Route.MetaFunction = () => [
 ];
 
 export default function Home() {
-  return <Welcome />;
+  return <HeaderSection/>;
 }
