@@ -1,0 +1,128 @@
+.ktl-footer {
+  background-color: #27282c;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 32px 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    padding: 0 24px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__social-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+  }
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__social-link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    display: flex;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__nav {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child)::after {
+        content: "|";
+        color: rgba(255, 255, 255, 0.3);
+        margin: 0 12px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__logo {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+
+    img {
+      height: 48px;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+
+    p {
+      margin: 0 0 4px;
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+    grid-column: 1 / -1;
+    grid-row: 3;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

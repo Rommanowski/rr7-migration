@@ -9,7 +9,9 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import "./css/styles-v2.scss"
+import "./css/styles-v2.scss";
+import Header from "~/components/header";
+import Footer from "~/components/footer";
 
 export const links: Route.LinksFunction = () => [
     { rel: "icon", type: "image/svg+xml", href: "/images/favicon.svg" },
@@ -32,7 +34,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <div className="global-layout">
+          <Header productWebUrl="https://github.com/JetBrains/kotlin/releases/tag/v1.6.20" />
+          {children}
+          <Footer />
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>
