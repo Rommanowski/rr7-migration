@@ -13,6 +13,9 @@ import "./css/styles-v2.scss";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 
+import '@rescui/typography/lib/font-jb-sans-auto.css';
+
+
 export const links: Route.LinksFunction = () => [
     { rel: "icon", type: "image/svg+xml", href: "/images/favicon.svg" },
     { rel: "alternate icon", href: "/images/favicon.ico" },
