@@ -12,16 +12,14 @@ import "./app.css";
 import "./css/styles-v2.scss"
 
 export const links: Route.LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
-  },
+    { rel: "icon", type: "image/svg+xml", href: "/images/favicon.svg" },
+    { rel: "alternate icon", href: "/images/favicon.ico" },
+    { rel: "apple-touch-icon", href: "/images/apple-touch-icon.png" },
+    { rel: "apple-touch-icon", sizes: "72x72", href: "/images/apple-touch-icon-72x72.png" },
+    { rel: "apple-touch-icon", sizes: "114x114", href: "/images/apple-touch-icon-114x114.png"
+    },
+    { rel: "apple-touch-icon", sizes: "144x144", href: "/images/apple-touch-icon-144x144.png"
+    },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
