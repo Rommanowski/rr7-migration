@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 import { HeaderSection } from "~/components/header-section";
+import { ThemeProvider } from "@rescui/ui-contexts";
 
 export const meta: Route.MetaFunction = () => [
     { title: "Kotlin Programming Language" },
@@ -16,5 +16,11 @@ export const meta: Route.MetaFunction = () => [
 ];
 
 export default function Home() {
-  return <HeaderSection/>;
+    return(
+    <div className="overview-page">
+        <ThemeProvider theme='dark'>
+            <HeaderSection/>
+        </ThemeProvider>
+    </div>
+    )
 }
