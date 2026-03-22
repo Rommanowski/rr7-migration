@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import { HeaderSection } from "~/components/header-section";
 import { LatestFromKotlinSection } from "~/components/latest-from-kotlin-section";
+import { WhyKotlinSection } from "~/components/why-kotlin-section";
 import { ThemeProvider } from "@rescui/ui-contexts";
 
 export const meta: Route.MetaFunction = () => [
@@ -22,6 +23,7 @@ export default function Home() {
         <ThemeProvider theme='dark'>
             <HeaderSection/>
             <LatestFromKotlinSection/>
+            <WhyKotlinSection/>
         </ThemeProvider>
     </div>
     )
