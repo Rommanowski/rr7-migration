@@ -33,7 +33,7 @@ export function HeaderSection() {
                     </div>
 
                     <div className="header-section__contributors">
-                        <img src="/images/jetbrains-logo.svg" alt=""></img>
+                        <img src="/images/jetbrains-logo.svg" alt=""/>
                         <p className={textCn('rs-text-2')}>
                             Developed by <a className={textCn('rs-link')}
                                             href="https://www.jetbrains.com/">JetBrains</a> & Open-source <a
@@ -50,7 +50,7 @@ export function HeaderSection() {
                             mode: 'classic',
                             isClickable: true
                         }), 'kto-col-3 kto-col-md-6 kto-col-sm-12')}>
-                            <img src={card.img} alt=""></img>
+                            <img src={card.img} alt=""/>
                             <h2 className={cn(textCn('rs-h3'), 'kto-offset-top-16')}>{card.title}</h2>
                             <p className={cn(textCn('rs-text-2'), 'kto-offset-top-16')}>{card.subTitle}</p>
                         </a>
