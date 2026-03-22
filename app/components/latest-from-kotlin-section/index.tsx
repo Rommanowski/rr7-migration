@@ -2,13 +2,9 @@ import React from 'react';
 import Button from '@rescui/button';
 import {useTextStyles} from '@rescui/typography';
 import cn from 'classnames';
-
 import {Container, Section} from "../layout";
-
-// import bannerImg from '../../../../../assets/images/index/banners/kotlin-1.6.20.png';
 import bannerImg from '/images/index/banners/kotlin-1.6.20.png';
 import bannerMobileImg from '/images/index/banners/kotlin-1.6.20-mobile.png';
-// import bannerMobileImg from '../../../../../assets/images/index/banners/kotlin-1.6.20-mobile.png';
 
 import {newsData} from './data';
 
