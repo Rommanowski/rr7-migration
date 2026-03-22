@@ -48,7 +48,7 @@ export default function Footer() {
                 className="ktl-footer__social-link"
                 aria-label={link.title}
               >
-                <link.Icon size="s" />
+                <link.Icon size="m" />
               </a>
             ))}
           </div>

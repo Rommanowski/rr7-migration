@@ -1,12 +1,12 @@
 .ktl-footer {
   background-color: #27282c;
   color: rgba(255, 255, 255, 0.6);
-  padding: 32px 0;
+  padding: 16px 0;
 
   &__inner {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 24px;
+    gap: 12px;
     padding: 0 24px;
   }
 
@@ -19,19 +19,20 @@
   }
 
   &__social-title {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
     white-space: nowrap;
   }
 
   &__social-links {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
   }
 
   &__social-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     display: flex;
     transition: color 0.2s;
@@ -71,7 +72,8 @@
   &__nav-link {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 700;
     transition: color 0.2s;
 
     &:hover {
@@ -87,7 +89,7 @@
     justify-self: end;
 
     img {
-      height: 48px;
+      height: 72px;
     }
   }
 
