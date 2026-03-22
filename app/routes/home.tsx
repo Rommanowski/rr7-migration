@@ -4,6 +4,7 @@ import { HeaderSection } from "~/components/header-section";
 import { LatestFromKotlinSection } from "~/components/latest-from-kotlin-section";
 import { WhyKotlinSection } from "~/components/why-kotlin-section";
 import { UsageSection } from "~/components/usage-section";
+import { StartSection } from "~/components/start-section";
 
 export const meta: Route.MetaFunction = () => [
     { title: "Kotlin Programming Language" },
@@ -26,6 +27,7 @@ export default function Home() {
             <LatestFromKotlinSection/>
             <WhyKotlinSection/>
             <UsageSection/>
+            <StartSection/>
         </ThemeProvider>
     </div>
     )
